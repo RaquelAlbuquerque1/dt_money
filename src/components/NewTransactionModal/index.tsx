@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
-import closeImg from '../../assets/close.svg';
+import closeIcon from '../../assets/close.svg'
 import incomeIcon from '../../assets/income.svg';
 import outcomeIcon from '../../assets/outcome.svg';
 import { useTransactions } from '../../hooks/useTransactions';
@@ -51,7 +51,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 onClick={onRequestClose}
                 className="react-modal-close"
             >
-                <img src={closeImg} alt="Fechar modal" />
+                <img src={closeIcon} alt="Fechar modal" />
             </button>
 
             <Container onSubmit={handleCreateNewTransaction}>
